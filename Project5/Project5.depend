@@ -1,0 +1,17 @@
+# depslib dependency file v1.0
+1520188208 source:c:\users\lawzii\pictures\important\school\cprog\project5\svgfunctions.cpp
+	"svgFunctions.h"
+
+1520202625 c:\users\lawzii\pictures\important\school\cprog\project5\svgfunctions.h
+	"simple_svg_1.0.0.hpp"
+
+1520188221 c:\users\lawzii\pictures\important\school\cprog\project5\simple_svg_1.0.0.hpp
+	<vector>
+	<string>
+	<sstream>
+	<fstream>
+	<iostream>
+
+1520210789 source:c:\users\lawzii\pictures\important\school\cprog\project5\main.cpp
+	"svgFunctions.h"
+
