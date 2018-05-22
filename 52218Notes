@@ -1,0 +1,57 @@
+
+public class StringFun2 {
+
+	public static void main(String[] args) {
+		String name;
+		String otherName;
+		
+		name = "bob"; // bob #1
+		otherName = new String ("bob"); //brings out bob #2
+		
+		if (name.equals(otherName)) { //.equals() compares strings or value to value 
+			System.out.println ("They are the same");
+		}
+		else {
+			System.out.println ("They are not the same");
+		}
+		
+		//------------------------------------------
+		
+		int a = 4, b = 5, c = 1;
+		
+		if (a > c || c < b && a > b) { // && precedes || and will fire off before unless surrounded by ()
+			System.out.println("We made it inside the if.");
+		}
+		else {
+			System.out.println("It was false.");
+		}
+		
+		//------------------------------------------
+		
+		String option = "Burger";
+		switch (option) {
+		case "Chicken" :
+			System.out.println("You chose chicken");
+			break ;
+		case "burger": // differing values causes switch to print default
+			System.out.println("You chose Burger");
+			break;
+		default: 
+			System.out.println("Not on the board");
+		}
+		
+		//------------------------------------------
+		
+		int grade = 95;
+		if (grade > 90) {
+			System.out.println("You got an A");
+		}else if (grade > 79) { // else if does not fire bc if statement was true
+			System.out.println("You got a B");
+		}else {
+			System.out.println("Grade does not exist.");
+		}
+		
+		
+	}
+
+}
