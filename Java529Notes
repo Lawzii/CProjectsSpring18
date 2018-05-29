@@ -1,0 +1,57 @@
+
+public class LoopDeLoop {
+
+	public static void main(String[] args) {
+		
+		
+		double money = 478.56;
+		float interest = .015f;
+		final int MONTHS = 12; // constants = final
+		int currentMonth = 0;
+		
+		while (currentMonth < MONTHS) {
+			money = (money * interest) + money ;
+			//System.out.printf ("You have %.2f dollars in your account currently \n", money);
+			currentMonth++;
+		}
+		//System.out.printf ("You have %.2f dollars in your account \n", money);
+	
+	
+	//----------------------------------------------------------------------------------------------- 
+	
+	double pennyAmount = 0.01;
+	int dayCount = 1 ;
+	
+	while (pennyAmount <= 1000000) {
+		pennyAmount = pennyAmount * 2; 
+		dayCount++;	
+		//System.out.printf ("You have " + pennyAmount +" on day " +dayCount +"\n");
+	}
+	//System.out.println (dayCount);
+	
+	
+	//-----------------------------------------------------------------------------------
+	
+	final int TESTSCORES = 4 ;
+	int[ ] gradeArray = new int[TESTSCORES];
+	float average;
+	int sum = 0;
+	
+	
+	gradeArray [0] = 90;
+	gradeArray [1] = 60;
+	gradeArray [2] = 75;
+	gradeArray [3] = 100;
+	
+	/*float average = (gradeArray[0] + gradeArray[1] + gradeArray[2] + gradeArray[3]) / gradeArray.length;
+	System.out.printf ("The average grade is %.2f\n", average); */
+	
+	for (int i = 0; i < gradeArray.length; i++ ) { // int i is declared within the for loop and will only be used in the loop
+		sum = sum + gradeArray[i];
+	}
+	average = sum / gradeArray.length;
+	System.out.printf ("The average grade is %.2f\n", average);
+	
+	}
+
+}
