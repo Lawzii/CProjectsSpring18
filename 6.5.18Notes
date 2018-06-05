@@ -1,0 +1,87 @@
+
+/* [Notes for Tic Tac To Project]
+
+int [][] myArray = new int [3][3];
+string [] [] tictac = new string [3][3];
+tictact [0][0] = "x";
+  0 1  2
+0 x -  -
+1 o o o
+2 - - x
+
+*/
+
+
+public class ArrayFun {
+
+	public static void main(String[] args) {
+  
+    final int STUDENTS = 4; // length of array. int GRADES is the length of the individual rows
+		final int GRADES = 3;
+		
+		
+		int myArray[] = new int[3];
+		myArray[0]= 2;
+		myArray [1] = 8;
+		myArray [2] = 16;
+		
+		int grades[][] = new int[STUDENTS][GRADES];
+		
+		// initialize the array with scores of 50
+		for (int i = 0 ; i < grades.length ; i++) {
+			for (int j = 0 ; j < grades[i].length; j++) {
+				System.out.println("We are using Bucket " + i + " at posistion " + j);
+				grades[i][j] = 50;	
+			}
+		}
+		
+		for (int i = 0 ; i < grades.length ; i++) {
+			for (int j = 0 ; j < grades[i].length; j++) {
+				System.out.println(grades[i][j]);	
+			}
+		}
+		for (int value : myArray) {
+			System.out.println(value);
+		}
+		
+		for (int[] buckets : grades ) {
+			for( int scores: buckets) {
+				System.out.println(scores);
+			}
+		}
+		
+		//--------------------------------------
+		
+		int var = 2;
+		
+		if (true) {
+			System.out.println("Can you see me " + var);
+			int var2 = 3;
+		}
+		
+		//System.out.println("Can you see me" + var2); // an error shows up because var2 is not initialized out of the 'it' statement.
+	  }
+  }
+  
+  
+public class ArrayFun {
+
+	public static void main(String[] args) {
+		int var = 3;
+		int var2 = 6;
+		int total = sum(var, var2);
+		System.out.println(total);
+		
+}
+
+public static int sum (int a, int b) { //since 'sum' is returning 'total' it will be called into 'main' and print '9'
+	int total = a + b;
+	return total ;
+}
+}
+
+// Rule of Thumb : Always return a value unless the work is completed inside of a method.
+// Main typically contains only print statements for design purpose
+// Other methods will contain code for it's specific print statement
+
+  
